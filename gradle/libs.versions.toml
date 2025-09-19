@@ -2,7 +2,7 @@
 agp = "8.13.0"
 jvm-target = "17"
 kotlin-core = "2.2.10"
-ksp = "2.2.20-2.0.2"
+ksp = "2.2.20-2.0.3"
 detekt = "1.23.8"
 junit5 = "5.13.4"
 mockk = "1.14.5"
