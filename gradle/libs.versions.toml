@@ -1,0 +1,67 @@
+[versions]
+agp = "8.13.0"
+jvm-target = "17"
+kotlin-core = "2.2.10"
+ksp = "2.2.20-2.0.2"
+detekt = "1.23.8"
+junit5 = "5.13.4"
+mockk = "1.14.5"
+turbine = "1.2.1"
+jacoco = "0.8.13"
+
+# Concurrency
+coroutines = "1.10.2"
+
+# Dependency Injection
+koin = "4.1.1"
+koin-annotation = "2.1.0"
+
+[libraries]
+# Concurrency
+coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
+
+# Dependency Injection - Koin Core
+koin-bom = { group = "io.insert-koin", name = "koin-bom", version.ref = "koin" }
+koin-core = { group = "io.insert-koin", name = "koin-core" }
+koin-core-coroutines = { group = "io.insert-koin", name = "koin-core-coroutines" }
+koin-annotation = { group = "io.insert-koin", name = "koin-annotations", version.ref = "koin-annotation" }
+koin-ksp = { group = "io.insert-koin", name = "koin-ksp-compiler", version.ref = "koin-annotation" }
+koin-ktor = { group = "io.insert-koin", name = "koin-ktor" }
+koin-compose = { group = "io.insert-koin", name = "koin-compose" }
+koin-compose-viewmodel = { group = "io.insert-koin", name = "koin-compose-viewmodel" }
+
+plugin-agp = { module = "com.android.tools.build:gradle", version.ref = "agp" }
+plugin-kgp = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin-core" }
+plugin-detekt = { module = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin", version.ref = "detekt" }
+plugin-ksp = { module = "com.google.devtools.ksp:symbol-processing-gradle-plugin", version.ref = "ksp" }
+
+detekt-twitter = { module = "com.twitter.compose.rules:detekt", version = "0.0.26" }
+detekt-formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
+
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit5" }
+junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit5" }
+junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit5" }
+junit-vintage-engine = { module = "org.junit.vintage:junit-vintage-engine", version.ref = "junit5" }
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin-core" }
+
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+mockk-android = { module = "io.mockk:mockk-android", version.ref = "mockk" }
+mockk-agent = { module = "io.mockk:mockk-agent", version.ref = "mockk" }
+
+turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
+
+[bundles]
+koin-nonandroid = [
+    "koin-core",
+    "koin-core-coroutines",
+    "koin-ktor",
+    "koin-compose",
+    "koin-compose-viewmodel",
+]
+
+[plugins]
+jacoco = { id = "jacoco" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+buildlogic-detekt = { id = "com.gruntsoftware.buildlogic.detekt" }
+buildlogic-test = { id = "com.gruntsoftware.buildlogic.test" }
