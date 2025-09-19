@@ -1,7 +1,7 @@
 [versions]
 agp = "8.13.0"
 jvm-target = "17"
-kotlin-core = "2.2.10"
+kotlin-core = "2.2.20"
 ksp = "2.2.20-2.0.3"
 detekt = "1.23.8"
 junit5 = "5.13.4"
@@ -13,22 +13,25 @@ jacoco = "0.8.13"
 coroutines = "1.10.2"
 
 # Dependency Injection
-koin = "4.1.1"
-koin-annotation = "2.1.0"
+koin-bom = "4.1.1"
+koin-annotation-bom = "2.1.0"
 
 [libraries]
 # Concurrency
 coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
 
 # Dependency Injection - Koin Core
-koin-bom = { group = "io.insert-koin", name = "koin-bom", version.ref = "koin" }
+koin-bom = { group = "io.insert-koin", name = "koin-bom", version.ref = "koin-bom" }
 koin-core = { group = "io.insert-koin", name = "koin-core" }
 koin-core-coroutines = { group = "io.insert-koin", name = "koin-core-coroutines" }
-koin-annotation = { group = "io.insert-koin", name = "koin-annotations", version.ref = "koin-annotation" }
-koin-ksp = { group = "io.insert-koin", name = "koin-ksp-compiler", version.ref = "koin-annotation" }
 koin-ktor = { group = "io.insert-koin", name = "koin-ktor" }
-koin-compose = { group = "io.insert-koin", name = "koin-compose" }
-koin-compose-viewmodel = { group = "io.insert-koin", name = "koin-compose-viewmodel" }
+koin-android = { module = "io.insert-koin:koin-android" }
+koin-android-compat = { module = "io.insert-koin:koin-android-compat" }
+koin-compose = { module = "io.insert-koin:koin-compose" }
+koin-compose-viewmodel = { module = "io.insert-koin:koin-compose-viewmodel" }
+koin-annotation-bom = { module = "io.insert-koin:koin-annotations-bom", version.ref = "koin-annotation-bom" }
+koin-annotation = { module = "io.insert-koin:koin-annotations" }
+koin-annotation-compiler = { module = "io.insert-koin:koin-ksp-compiler", version.ref = "koin-annotation-bom" }
 
 plugin-agp = { module = "com.android.tools.build:gradle", version.ref = "agp" }
 plugin-kgp = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin-core" }
@@ -58,10 +61,14 @@ koin-nonandroid = [
     "koin-compose",
     "koin-compose-viewmodel",
 ]
+koin = ["koin-android", "koin-android-compat", "koin-compose", "koin-compose-viewmodel"]
 
 [plugins]
 jacoco = { id = "jacoco" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin-core" }
+jetbrains-kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin-core" }
+jetbrains-kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin-core" }
 buildlogic-detekt = { id = "com.gruntsoftware.buildlogic.detekt" }
 buildlogic-test = { id = "com.gruntsoftware.buildlogic.test" }
