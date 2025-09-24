@@ -5,6 +5,7 @@ core-ktx = "1.12.0"
 kotlin-core = "2.2.20"
 ksp = "2.2.20-2.0.3"
 detekt = "1.23.8"
+junit = "4.13.2"
 junit5 = "5.13.4"
 mockk = "1.14.5"
 turbine = "1.2.1"
@@ -54,6 +55,7 @@ plugin-ksp = { module = "com.google.devtools.ksp:symbol-processing-gradle-plugin
 detekt-twitter = { module = "com.twitter.compose.rules:detekt", version = "0.0.26" }
 detekt-formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
 
+junit = { module = "junit:junit", version.ref = "junit" }
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit5" }
 junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit5" }
 junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit5" }
