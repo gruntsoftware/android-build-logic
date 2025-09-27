@@ -83,6 +83,7 @@ androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-
 androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "androidx-compose-nav" }
 orbit-core = { module = "org.orbit-mvi:orbit-core", version.ref = "orbit" }
+orbit-compose = { module = "org.orbit-mvi:orbit-compose", version.ref = "orbit" }
 orbit-android = { module = "org.orbit-mvi:orbit-viewmodel", version.ref = "orbit" }
 orbit-test = { module = "org.orbit-mvi:orbit-test", version.ref = "orbit" }
 
@@ -101,7 +102,7 @@ koin-nonandroid = [
 ]
 koin = ["koin-android", "koin-android-compat", "koin-compose", "koin-compose-viewmodel"]
 revenue-cat = ["revenue-cat", "revenue-cat-ui"]
-orbit = ["orbit-core", "orbit-android"]
+orbit = ["orbit-core", "orbit-android", "orbit-compose"]
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
