@@ -18,7 +18,7 @@ material = "1.13.0"
 androidx-compose-bom = "2025.01.00"
 androidx-compose-nav = "2.9.4"
 androidx-activity-compose = "1.9.3"
-androidx-fragment-compose = "1.8.5"
+androidx-fragment-compose = "1.8.9"
 
 # Concurrency
 coroutines = "1.10.2"
