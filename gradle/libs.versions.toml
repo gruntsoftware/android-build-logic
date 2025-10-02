@@ -28,7 +28,7 @@ coroutines = "1.10.2"
 koin-bom = "4.1.1"
 koin-annotation-bom = "2.1.0"
 
-revenue-cat = "9.7.1"
+revenue-cat = "9.8.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
