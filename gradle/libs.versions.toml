@@ -12,6 +12,7 @@ turbine = "1.2.1"
 jacoco = "0.8.13"
 app-startup = "1.2.0"
 orbit = "10.0.0"
+kotlin-immutable = "0.4.0"
 
 # Compose
 material = "1.13.0"
@@ -33,6 +34,7 @@ revenue-cat = "9.7.1"
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
 app-startup = { module = "androidx.startup:startup-runtime", version.ref = "app-startup" }
 # Concurrency
+kotlin-immutable = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable", version.ref = "kotlin-immutable" }
 coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
 
 # Dependency Injection - Koin Core
