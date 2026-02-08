@@ -1,4 +1,4 @@
-package com.gruntsoftware.buildlogic.common.components
+package com.android.buildlogic.common.components
 
 import org.gradle.api.Project
 import org.gradle.api.artifacts.VersionCatalog

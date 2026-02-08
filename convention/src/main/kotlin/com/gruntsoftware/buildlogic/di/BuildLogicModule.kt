@@ -1,10 +1,10 @@
-package com.gruntsoftware.buildlogic.di
+package com.android.buildlogic.di
 
 import org.koin.core.annotation.ComponentScan
 import org.koin.core.annotation.Module
 
 @Module
 @ComponentScan(
-    "com.gruntsoftware.buildlogic"
+    "com.android.buildlogic"
 )
 object BuildLogicModule

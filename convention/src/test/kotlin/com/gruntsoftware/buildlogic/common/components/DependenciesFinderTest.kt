@@ -1,4 +1,4 @@
-package com.gruntsoftware.buildlogic.common.components
+package com.android.buildlogic.common.components
 
 import io.mockk.every
 import io.mockk.mockk

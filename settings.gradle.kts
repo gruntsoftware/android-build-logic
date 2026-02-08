@@ -18,5 +18,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "gruntsoftware-build-logic"
+rootProject.name = "android-build-logic"
 include(":convention")

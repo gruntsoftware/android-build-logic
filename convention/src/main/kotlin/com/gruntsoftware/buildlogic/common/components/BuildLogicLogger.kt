@@ -1,6 +1,6 @@
-package com.gruntsoftware.buildlogic.common.components
+package com.android.buildlogic.common.components
 
-import com.gruntsoftware.buildlogic.common.utils.C
+import com.android.buildlogic.common.utils.C
 import org.koin.core.annotation.Single
 
 @Single

@@ -1,7 +1,7 @@
-package com.gruntsoftware.buildlogic.common.components
+package com.android.buildlogic.common.components
 
-import com.gruntsoftware.buildlogic.android.components.dependency.AndroidDependenciesApplicator
-import com.gruntsoftware.buildlogic.common.utils.ComponentProvider
+import com.android.buildlogic.android.components.dependency.AndroidDependenciesApplicator
+import com.android.buildlogic.common.utils.ComponentProvider
 import io.gitlab.arturbosch.detekt.Detekt
 import io.gitlab.arturbosch.detekt.DetektCreateBaselineTask
 import io.gitlab.arturbosch.detekt.extensions.DetektExtension

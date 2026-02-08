@@ -66,12 +66,12 @@ afterEvaluate {
 gradlePlugin {
     plugins {
         register("detekt") {
-            id = "com.gruntsoftware.buildlogic.detekt"
-            implementationClass = "com.gruntsoftware.buildlogic.common.plugins.DetektConventionPlugin"
+            id = "com.android.buildlogic.detekt"
+            implementationClass = "com.android.buildlogic.common.plugins.DetektConventionPlugin"
         }
         register("androidTest") {
-            id = "com.gruntsoftware.buildlogic.test"
-            implementationClass = "com.gruntsoftware.buildlogic.android.plugins.TestConventionPlugin"
+            id = "com.android.buildlogic.test"
+            implementationClass = "com.android.buildlogic.android.plugins.TestConventionPlugin"
         }
     }
 }
