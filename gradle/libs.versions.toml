@@ -115,5 +115,5 @@ detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin-core" }
 jetbrains-kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin-core" }
 jetbrains-kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin-core" }
-buildlogic-detekt = { id = "com.gruntsoftware.buildlogic.detekt" }
-buildlogic-test = { id = "com.gruntsoftware.buildlogic.test" }
+buildlogic-detekt = { id = "com.android.buildlogic.detekt" }
+buildlogic-test = { id = "com.android.buildlogic.test" }

@@ -1,4 +1,4 @@
-package com.gruntsoftware.buildlogic.common.utils
+package com.android.buildlogic.common.utils
 
 import org.gradle.api.Project
 import org.koin.core.parameter.ParametersHolder

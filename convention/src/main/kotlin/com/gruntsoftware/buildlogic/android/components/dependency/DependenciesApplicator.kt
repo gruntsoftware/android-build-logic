@@ -1,4 +1,4 @@
-package com.gruntsoftware.buildlogic.android.components.dependency
+package com.android.buildlogic.android.components.dependency
 
 import org.gradle.api.artifacts.MinimalExternalModuleDependency
 import org.gradle.api.provider.Provider

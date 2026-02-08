@@ -1,14 +1,14 @@
-package com.gruntsoftware.buildlogic.android.components.setup
+package com.android.buildlogic.android.components.setup
 
 import com.android.build.gradle.AppExtension
 import com.android.build.gradle.BaseExtension
 import com.android.build.gradle.LibraryExtension
 import com.android.build.gradle.internal.core.InternalBaseVariant
-import com.gruntsoftware.buildlogic.android.components.dependency.AndroidDependenciesApplicator
-import com.gruntsoftware.buildlogic.android.utils.AndroidProjectTypeChecker
-import com.gruntsoftware.buildlogic.common.components.BuildLogicLogger
-import com.gruntsoftware.buildlogic.common.components.VersionFinder
-import com.gruntsoftware.buildlogic.common.utils.ComponentProvider
+import com.android.buildlogic.android.components.dependency.AndroidDependenciesApplicator
+import com.android.buildlogic.android.utils.AndroidProjectTypeChecker
+import com.android.buildlogic.common.components.BuildLogicLogger
+import com.android.buildlogic.common.components.VersionFinder
+import com.android.buildlogic.common.utils.ComponentProvider
 import org.gradle.api.Project
 import org.gradle.api.Task
 import org.gradle.api.tasks.TaskProvider

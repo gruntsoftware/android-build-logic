@@ -1,7 +1,7 @@
-package com.gruntsoftware.buildlogic.common.plugins
+package com.android.buildlogic.common.plugins
 
-import com.gruntsoftware.buildlogic.common.components.DetektSetup
-import com.gruntsoftware.buildlogic.common.utils.ComponentProvider
+import com.android.buildlogic.common.components.DetektSetup
+import com.android.buildlogic.common.utils.ComponentProvider
 import org.gradle.api.Project
 
 class DetektConventionPlugin : BasePlugin() {
