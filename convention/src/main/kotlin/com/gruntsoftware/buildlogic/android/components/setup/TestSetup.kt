@@ -55,7 +55,8 @@ class TestSetup(
             "mockk-android",
             "mockk-agent",
             "turbine",
-            "coroutines-test"
+            "coroutines-test",
+            "orbit-test"
         )
         dependenciesApplicator.testImplementations(*testDependencies)
         dependenciesApplicator.androidTestImplementations(*testDependencies)
