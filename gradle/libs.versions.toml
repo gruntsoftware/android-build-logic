@@ -11,8 +11,6 @@ mockk = "1.14.5"
 turbine = "1.2.1"
 jacoco = "0.8.13"
 app-startup = "1.2.0"
-orbit = "10.0.0"
-kotlin-immutable = "0.4.0"
 
 # Compose
 material = "1.13.0"
@@ -84,10 +82,6 @@ androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "u
 androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "androidx-compose-nav" }
-orbit-core = { module = "org.orbit-mvi:orbit-core", version.ref = "orbit" }
-orbit-compose = { module = "org.orbit-mvi:orbit-compose", version.ref = "orbit" }
-orbit-android = { module = "org.orbit-mvi:orbit-viewmodel", version.ref = "orbit" }
-orbit-test = { module = "org.orbit-mvi:orbit-test", version.ref = "orbit" }
 
 revenue-cat = { module = "com.revenuecat.purchases:purchases", version.ref = "revenue-cat" }
 revenue-cat-ui = { module = "com.revenuecat.purchases:purchases-ui", version.ref = "revenue-cat" }
@@ -104,7 +98,6 @@ koin-nonandroid = [
 ]
 koin = ["koin-android", "koin-android-compat", "koin-compose", "koin-compose-viewmodel"]
 revenue-cat = ["revenue-cat", "revenue-cat-ui"]
-orbit = ["orbit-core", "orbit-android", "orbit-compose"]
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
