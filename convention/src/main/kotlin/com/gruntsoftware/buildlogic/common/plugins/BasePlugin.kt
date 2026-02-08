@@ -1,6 +1,6 @@
-package com.gruntsoftware.buildlogic.common.plugins
+package com.android.buildlogic.common.plugins
 
-import com.gruntsoftware.buildlogic.di.BuildLogicModule
+import com.android.buildlogic.di.BuildLogicModule
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.koin.core.component.KoinComponent

@@ -1,6 +1,6 @@
-package com.gruntsoftware.buildlogic.common.components
+package com.android.buildlogic.common.components
 
-import com.gruntsoftware.buildlogic.common.utils.ComponentProvider
+import com.android.buildlogic.common.utils.ComponentProvider
 import org.gradle.api.Project
 import org.koin.core.annotation.Factory
 import org.koin.core.annotation.InjectedParam

@@ -1,4 +1,4 @@
-package com.gruntsoftware.buildlogic.android.utils
+package com.android.buildlogic.android.utils
 
 import org.gradle.api.Project
 import org.koin.core.annotation.Factory

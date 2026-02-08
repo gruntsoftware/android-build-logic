@@ -1,8 +1,8 @@
-package com.gruntsoftware.buildlogic.android.components.dependency
+package com.android.buildlogic.android.components.dependency
 
-import com.gruntsoftware.buildlogic.common.components.BuildLogicLogger
-import com.gruntsoftware.buildlogic.common.components.DependenciesFinder
-import com.gruntsoftware.buildlogic.common.utils.ComponentProvider
+import com.android.buildlogic.common.components.BuildLogicLogger
+import com.android.buildlogic.common.components.DependenciesFinder
+import com.android.buildlogic.common.utils.ComponentProvider
 import org.gradle.api.Project
 import org.gradle.api.artifacts.MinimalExternalModuleDependency
 import org.gradle.api.provider.Provider
