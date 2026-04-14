@@ -99,6 +99,8 @@ style:
     active: true
     ignoreAnnotated:
       - 'Preview'
+      - 'PreviewLightDark'
+      - 'PreviewScreenSizes'
   ReturnCount:
     active: false
 
