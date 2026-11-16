@@ -29,7 +29,7 @@ koin-bom = "4.1.1"
 koin-annotation-bom = "2.1.0"
 
 revenue-cat = "9.7.1"
-appsflyer = "6.15.2"
+appsflyer = "7.0.4"
 installreferrer = "2.2"
 
 [libraries]
