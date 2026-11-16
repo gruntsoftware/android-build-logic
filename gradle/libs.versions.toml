@@ -29,6 +29,8 @@ koin-bom = "4.1.1"
 koin-annotation-bom = "2.1.0"
 
 revenue-cat = "9.7.1"
+appsflyer = "6.15.2"
+installreferrer = "2.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -91,6 +93,8 @@ orbit-test = { module = "org.orbit-mvi:orbit-test", version.ref = "orbit" }
 
 revenue-cat = { module = "com.revenuecat.purchases:purchases", version.ref = "revenue-cat" }
 revenue-cat-ui = { module = "com.revenuecat.purchases:purchases-ui", version.ref = "revenue-cat" }
+appsflyer = { module = "com.appsflyer:af-android-sdk", version.ref = "appsflyer" }
+android-installreferrer = { module = "com.android.installreferrer:installreferrer", version.ref = "installreferrer" }
 
 [bundles]
 androidx-compose = ["androidx-activity-compose", "androidx-compose-ui", "androidx-compose-ui-graphics", "androidx-compose-ui-tooling", "androidx-compose-ui-tooling-preview", "androidx-compose-material3", "androidx-compose-ui-text-google-fonts", "androidx-fragment-compose", "androidx-compose-navigation"]
